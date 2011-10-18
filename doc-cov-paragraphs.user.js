@@ -34,13 +34,19 @@ $versePs.hover(function() {
 
 $('.summary a').each(function() {
 	var $rangeLink = $(this);
-	var verses = $rangeLink.text().split('\u2013'); // en dash
-	if (verses.length == 2) {
-		var endVerse = verses[1];
-		$('a[name='+endVerse+']').parent().after('<p/>');
-	}
+	var url = $rangeLink.attr('href').split('?')[0];
+    var pieces = url.split('/');
+    if (pieces.length) {
+        var verseRange = pieces[pieces.length-1].split('.');
+        if (verseRange.length == 2) {
+            verseRange = verseRange[1].split('-');
+            if (verseRange.length == 2) {
+                var endVerse = verseRange[1];
+                $('a[name='+endVerse+']').parent().after('<p/>');
+            }
+        }
+    }
 });
-
 
 
 
