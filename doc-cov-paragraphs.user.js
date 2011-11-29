@@ -27,14 +27,14 @@ var $versePs = $('.verses>p');
 $versePs.css('display', 'inline');
 $versePs.find('.verse').css({'font-size': '10px', 'vertical-align': 'super', 'line-height': 1, 'visibility': 'hidden', 'position': 'absolute', 'margin-left': '-0.5em' });
 $versePs.hover(function() {
-	$(this).find('.verse').css('visibility', 'visible');
+    $(this).find('.verse').css('visibility', 'visible');
 }, function() {
-	$(this).find('.verse').css('visibility', 'hidden');
+    $(this).find('.verse').css('visibility', 'hidden');
 });
 
 $('.summary a').each(function() {
-	var $rangeLink = $(this);
-	var url = $rangeLink.attr('href').split('?')[0];
+    var $rangeLink = $(this);
+    var url = $rangeLink.attr('href').split('?')[0];
     var pieces = url.split('/');
     if (pieces.length) {
         var verseRange = pieces[pieces.length-1].split('.');
