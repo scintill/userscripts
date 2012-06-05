@@ -4,6 +4,8 @@
 // @description    Tweaks BYU CAS to help prevent websites using your CAS credentials without your knowledge.
 // @match          https://cas.byu.edu/cas/login
 // @match          https://cas.byu.edu/cas/login?*
+// @match          https://cas-stg.byu.edu/cas/login
+// @match          https://cas-stg.byu.edu/cas/login?*
 // @version        1.0
 // ==/UserScript==
 
