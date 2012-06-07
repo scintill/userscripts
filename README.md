@@ -9,5 +9,5 @@ http://userscripts.org/scripts/show/68826
 3. Route Y links on the BYU Home Page
 http://userscripts.org/scripts/show/117853
 
-4. BYU CAS NoPhish
+4. BYU CAS NoSnoop
 http://userscripts.org/scripts/show/123298

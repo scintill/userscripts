@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name           BYU CAS NoPhish
+// @name           BYU CAS NoSnoop
 // @namespace      joeyhewitt
-// @description    Tweaks BYU CAS to help prevent websites using your CAS credentials without your knowledge.
+// @description    Tweaks BYU CAS to help prevent websites obtaining your CAS identity without your knowledge (auto-enable "Warn me before signing me into other sites.")
 // @match          https://cas.byu.edu/cas/login
 // @match          https://cas.byu.edu/cas/login?*
 // @match          https://cas-stg.byu.edu/cas/login
